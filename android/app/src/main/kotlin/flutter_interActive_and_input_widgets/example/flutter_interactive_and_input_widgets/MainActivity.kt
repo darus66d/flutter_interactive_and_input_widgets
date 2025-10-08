@@ -1,0 +1,5 @@
+package flutter_interActive_and_input_widgets.example.flutter_interactive_and_input_widgets
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity()
