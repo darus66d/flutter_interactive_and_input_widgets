@@ -21,13 +21,13 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.indigo,
-        title: Center(child: Text("TextButton",style: TextStyle(color: Colors.white),)),
-      ),
-      // backgroundColor: Colors.deepPurple,
-      body: Center(
-        child: Column(
+        appBar: AppBar(
+          backgroundColor: Colors.indigo,
+          title: Center(child: Text("TextButton",style: TextStyle(color: Colors.white),)),
+        ),
+        // backgroundColor: Colors.deepPurple,
+        body: Center(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -38,8 +38,8 @@ class Homepage extends StatelessWidget {
               SizedBox(height: 10,),
 
             ],
-        ),
-      )
+          ),
+        )
     );
   }
 }
