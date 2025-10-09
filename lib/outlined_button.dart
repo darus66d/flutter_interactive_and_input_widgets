@@ -23,7 +23,7 @@ class Homepage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.indigo,
-          title: Center(child: Text("TextButton",style: TextStyle(color: Colors.white),)),
+          title: Center(child: Text("Outlined Button",style: TextStyle(color: Colors.white),)),
         ),
         // backgroundColor: Colors.deepPurple,
         body: Column(
