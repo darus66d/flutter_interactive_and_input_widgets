@@ -30,7 +30,32 @@ class Homepage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-
+            SizedBox(height: 20,),
+            InkWell(
+              onTap: (){
+                print("tap");
+              },
+              onDoubleTap: (){
+                print('Double tap');
+              },
+              onLongPress: (){
+                print('Long Press');
+              },
+              child: Text("Tap",style: TextStyle(color: Colors.white),),
+            ),
+            SizedBox(height: 20,),
+            GestureDetector(
+              onTap: (){
+                print("tap");
+              },
+              onDoubleTap: (){
+                print('Double tap');
+              },
+              onLongPress: (){
+                print('Long Press');
+              },
+              child: Text("Tap",style: TextStyle(color: Colors.white),),
+            )
           ],
         ),
       ),
