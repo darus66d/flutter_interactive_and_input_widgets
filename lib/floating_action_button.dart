@@ -26,6 +26,14 @@ class Homepage extends StatelessWidget {
         title: Center(child: Text("Floating Action Button",style: TextStyle(color: Colors.white),)),
       ),
       // backgroundColor: Colors.deepPurple,
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child: Icon(Icons.add),
+        backgroundColor: Colors.green,
+        foregroundColor: Colors.white,
+        shape: CircleBorder(),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
     );
   }
 }
