@@ -60,6 +60,17 @@ class Homepage extends StatelessWidget {
                 decoration: InputDecoration(labelText: "Note"),
               ),
               SizedBox(height: 20,),
+              OutlinedButton(onPressed: (){
+                print("Outlined Button");
+              }, child: Text("Submit"),
+                style: OutlinedButton.styleFrom(
+                    side: BorderSide(color: Colors.red,width: 2),
+                    padding: EdgeInsets.fromLTRB(40, 20, 40, 20),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(1)
+                    )
+                ),
+              ),
 
             ],
           ),
