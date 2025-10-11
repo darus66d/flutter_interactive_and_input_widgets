@@ -36,19 +36,29 @@ class Homepage extends StatelessWidget {
           padding: const EdgeInsets.all(40.0),
           child: Column(
             children: [
-              TextFormField(),
+              TextFormField(
+                decoration: InputDecoration(labelText: "Name"),
+              ),
               SizedBox(height: 20,),
-              TextFormField(),
+              TextFormField(
+                decoration: InputDecoration(labelText: "Gmail"),
+              ),
               SizedBox(height: 20,),
-              TextFormField(),
+              TextFormField(
+                decoration: InputDecoration(labelText: "Phone Number"),
+              ),
               SizedBox(height: 20,),
-              TextFormField(),
+              TextFormField(
+                decoration: InputDecoration(labelText: "University"),
+              ),
               SizedBox(height: 20,),
-              TextFormField(),
+              TextFormField(
+                decoration: InputDecoration(labelText: "Address"),
+              ),
               SizedBox(height: 20,),
-              TextFormField(),
-              SizedBox(height: 20,),
-              TextFormField(),
+              TextFormField(
+                decoration: InputDecoration(labelText: "Note"),
+              ),
               SizedBox(height: 20,),
 
             ],
