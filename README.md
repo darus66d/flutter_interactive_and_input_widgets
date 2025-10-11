@@ -6,3 +6,5 @@
 6.Gesture Detector/InkWell
 7.DropDown button
 8.PopUPMenu button
+9.CheckBox And Switch
+10.Slider
