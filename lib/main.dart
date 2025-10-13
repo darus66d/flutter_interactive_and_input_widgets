@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_interactive_and_input_widgets/List and scroll widgets/scroll.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -10,32 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Homepage(),
+      home: const ScrollPage(),
     );
   }
 }
 
-class Homepage extends StatelessWidget {
-  const Homepage({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
-      appBar: AppBar(
-        backgroundColor: Colors.indigo,
-        title: Center(child: Text("InkWell or GestureDetector",style: TextStyle(color: Colors.white),)),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-
-          ],
-        ),
-      ),
-    );
-  }
-}
 
 
