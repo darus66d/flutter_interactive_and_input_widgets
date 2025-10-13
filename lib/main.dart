@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_interactive_and_input_widgets/List and scroll widgets/scroll.dart';
-import 'package:flutter_interactive_and_input_widgets/List%20and%20scroll%20widgets/grid_view.dart';
-import 'package:flutter_interactive_and_input_widgets/List%20and%20scroll%20widgets/list.dart';
+// import 'package:flutter_interactive_and_input_widgets/List and scroll widgets/scroll.dart';
+// import 'package:flutter_interactive_and_input_widgets/List%20and%20scroll%20widgets/grid_view.dart';
+// import 'package:flutter_interactive_and_input_widgets/List%20and%20scroll%20widgets/list.dart';
+import 'package:flutter_interactive_and_input_widgets/List%20and%20scroll%20widgets/page_view.dart';
 
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const GridViewPage(),
+      home: const PageViewPage(),
     );
   }
 }
