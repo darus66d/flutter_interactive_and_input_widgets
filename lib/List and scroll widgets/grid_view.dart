@@ -10,18 +10,31 @@ class GridViewPage extends StatelessWidget {
           backgroundColor: Colors.indigo,
           title: Center(child: Text("Grid view",style: TextStyle(color: Colors.white),)),
         ),
-        body: GridView.count(
-            crossAxisCount: 2,
-          childAspectRatio: 1,
-          mainAxisSpacing: 8,
-          crossAxisSpacing: 8,
-          children: [
-            Container(color: Colors.red,),
-            Container(color: Colors.green,),
-            Container(color: Colors.blue,),
-            Container(color: Colors.purple,),
-          ],
-        )
+         body: GridView.builder(
+           itemCount: 30,
+             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                 crossAxisCount: 4,
+                 crossAxisSpacing: 8,
+                 mainAxisSpacing: 15,
+    ),
+             itemBuilder: (context,index){
+             return Container(
+             color: Colors.purple,
+             );
+    })
+
+      // GridView.count(
+        //     crossAxisCount: 2,
+        //   childAspectRatio: 1,
+        //   mainAxisSpacing: 8,
+        //   crossAxisSpacing: 8,
+        //   children: [
+        //     Container(color: Colors.red,),
+        //     Container(color: Colors.green,),
+        //     Container(color: Colors.blue,),
+        //     Container(color: Colors.purple,),
+        //   ],
+        // )
 
     );
   }
