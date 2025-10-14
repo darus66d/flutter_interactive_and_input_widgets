@@ -1,6 +1,21 @@
 import 'package:flutter/material.dart';
 
   void showAlertDialog(BuildContext context) {
+    showDialog(
+        context: context,
+        builder:(BuildContext context){
+          return  AlertDialog(
+            title: Text('Alert'),
+            content: Text("Do you want to delete"),
+            actions: [
+              TextButton(onPressed: ()=>Navigator.pop(context),
+                  child: Text("cancel")),
+              TextButton(onPressed: ()=>Navigator.pop(context),
+                  child: Text("Ok"))
+            ],
+          );
+        }
+    );
 
   }
 
