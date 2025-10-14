@@ -20,6 +20,28 @@ import 'package:flutter/material.dart';
   }
 
   void showSimpleDialog(BuildContext context) {
+    showDialog(
+        context: context,
+        builder: (BuildContext context){
+          return SimpleDialog(
+            title: Text("This is a simple dialog"),
+            children: [
+              SimpleDialogOption(
+                onPressed: ()=>Navigator.pop(context,"option A"),
+                child: Text("Option A"),
+              ),
+              SimpleDialogOption(
+                onPressed: ()=>Navigator.pop(context,"option B"),
+                child: Text("Option B"),
+              ),
+              SimpleDialogOption(
+                onPressed: ()=>Navigator.pop(context,"option C"),
+                child: Text("Option C"),
+              ),
+            ],
+          );
+        }
+    );
 
   }
   void  showSnackbar(BuildContext context) {
