@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_interactive_and_input_widgets/DiaLog_PopUp%20Widgets/dialog.dart';
-import 'package:flutter_interactive_and_input_widgets/DiaLog_PopUp%20Widgets/popups.dart';
+import 'package:flutter_interactive_and_input_widgets/DiaLog_PopUp%20Widgets/popups_dialog.dart';
 
 void main() {
   runApp(const MyApp());
