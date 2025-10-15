@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_interactive_and_input_widgets/DiaLog_PopUp%20Widgets/popups_dialog.dart';
+import 'package:flutter_interactive_and_input_widgets/Flutter_Navigation/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const PopupsPage(),
-
-
-
+      debugShowCheckedModeBanner: false,
+      home: const HomeScreenPage(),
     );
   }
 }
