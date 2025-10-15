@@ -49,6 +49,10 @@ import 'package:flutter/material.dart';
       SnackBar(
         content: Text("Message to Show"),
         duration: Duration(seconds: 2),
+        action: SnackBarAction(
+            label: 'Close',
+            onPressed: ()=>ScaffoldMessenger.of(context).hideCurrentSnackBar()
+        ),
       )
     );
 
