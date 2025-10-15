@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SecondScreenPage extends StatelessWidget {
   const SecondScreenPage({super.key});
 
@@ -16,12 +15,7 @@ class SecondScreenPage extends StatelessWidget {
            mainAxisAlignment: MainAxisAlignment.end,
           children: [
             ElevatedButton(onPressed: (){
-              // Navigator.push(
-              //     context,
-              //     MaterialPageRoute(
-              //         builder: (context)=>HomeScreenPage()
-              //     )
-              // );
+              Navigator.pop(context);
             },
                 child: Text("Go Back"))
           ],
