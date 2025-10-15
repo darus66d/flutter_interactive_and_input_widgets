@@ -55,6 +55,16 @@ import 'package:flutter/material.dart';
   }
 
   void showBottomSheet(BuildContext context){
+    showModalBottomSheet(
+        context: context,
+        builder: (BuildContext context){
+        return Container(
+          padding: EdgeInsets.all(16),
+          height: 300,
+          color: Colors.blue
+        );
+      }
+    );
 
   }
 
