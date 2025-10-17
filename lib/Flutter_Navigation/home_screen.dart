@@ -24,7 +24,8 @@ class HomeScreenPage extends StatelessWidget {
           //       )
           //   );
           // },
-          Navigator.pushNamed(
+          // Navigator.pushNamed
+          Navigator.pushReplacementNamed(
               context,
               '/second',
             arguments: ScreenArguments('hello darus'),

@@ -18,15 +18,16 @@ class MyApp extends StatelessWidget {
       initialRoute: '/home',
       routes: {
         '/home':(context)=> HomeScreenPage(),
-         '/second':(context)=>SecondScreenPage(data: 'Darus',),
+         // '/second':(context)=>SecondScreenPage(data: 'Darus',),
       },
       onGenerateRoute: (settings){
-      //   if(settings.name=='/second'){
-      //     final args = settings.arguments as ScreenArguments;
-      //     return MaterialPageRoute(
-      //         builder: (context)=>SecondScreenPage(data:args.message));
-      //   }
-      //   return null;
+
+        if(settings.name=='/second'){
+          final args = settings.arguments as ScreenArguments;
+          return MaterialPageRoute(
+              builder: (context)=>SecondScreenPage(data:args.message));
+        }
+        return null;
        },
       onUnknownRoute: (settings){
         return MaterialPageRoute(
