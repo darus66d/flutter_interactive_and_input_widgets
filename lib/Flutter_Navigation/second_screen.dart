@@ -19,7 +19,7 @@ class SecondScreenPage extends StatelessWidget {
            // mainAxisAlignment: MainAxisAlignment.end,
           children: [
             ElevatedButton(onPressed: (){
-              Navigator.pop(context);
+              Navigator.pop(context,'Returned Data');
             },
                 child: Text(data))
           ],

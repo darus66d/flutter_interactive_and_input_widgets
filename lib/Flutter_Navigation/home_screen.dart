@@ -16,7 +16,7 @@ class HomeScreenPage extends StatelessWidget {
         child: Column(
           // mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            ElevatedButton(onPressed: (){
+            ElevatedButton(onPressed: ()async{
           //   Navigator.push(
           //       context,
           //       MaterialPageRoute(
@@ -24,12 +24,16 @@ class HomeScreenPage extends StatelessWidget {
           //       )
           //   );
           // },
-          // Navigator.pushNamed
-          Navigator.pushReplacementNamed(
+          final result = await Navigator.pushNamed(
+          // Navigator.pushReplacementNamed(
               context,
               '/second',
             arguments: ScreenArguments('hello darus'),
           );
+          if(result!=null){
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(content: Text("Received $result")));
+          }
             },
                 child: Text("Go to Second Screen")),
           ],
