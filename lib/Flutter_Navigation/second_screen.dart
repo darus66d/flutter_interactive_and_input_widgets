@@ -5,7 +5,10 @@ class SecondScreenPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //PopScope
     return Scaffold(
+
+      
       appBar: AppBar(
         title: Center(child: Text("Second Screen",)),
         backgroundColor: Colors.blueGrey,
@@ -24,3 +27,7 @@ class SecondScreenPage extends StatelessWidget {
     );
   }
 }
+
+
+
+

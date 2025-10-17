@@ -16,14 +16,17 @@ class HomeScreenPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             ElevatedButton(onPressed: (){
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context)=>SecondScreenPage()
-                  )
-              );
-            },
-                child: Text("Go to Second Screen"))
+          //   Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context)=>SecondScreenPage()
+          //       )
+          //   );
+          // },
+          Navigator.pushNamed(context, '/second');
+    },
+
+                child: Text("Go to Second Screen")),
           ],
         ),
       ),
