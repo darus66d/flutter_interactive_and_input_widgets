@@ -14,10 +14,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: const HomeScreenPage(),
-      initialRoute: '/home',
+      // initialRoute: '/home',
+      initialRoute: '/home123',
       routes: {
         '/home':(context)=> HomeScreenPage(),
         '/second':(context)=>SecondScreenPage(),
+      },
+      onUnknownRoute: (settings){
+        return MaterialPageRoute(
+            builder: (_)=> Scaffold(
+              body: Center(child: Text("404 - Page not found")),
+            )
+        );
       },
     );
   }
