@@ -15,10 +15,18 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // home: const HomeScreenPage(),
       // initialRoute: '/home',
-      initialRoute: '/home123',
+      initialRoute: '/home',
       routes: {
         '/home':(context)=> HomeScreenPage(),
-        '/second':(context)=>SecondScreenPage(),
+        // '/second':(context)=>SecondScreenPage(),
+      },
+      onGenerateRoute: (settings){
+        if(settings.name=='/second'){
+          final args = settings.arguments as ScreenArguments;
+          return MaterialPageRoute(
+              builder: (context)=>SecondScreenPage(data:args.message));
+        }
+        return null;
       },
       onUnknownRoute: (settings){
         return MaterialPageRoute(
@@ -29,6 +37,11 @@ class MyApp extends StatelessWidget {
       },
     );
   }
+}
+
+class ScreenArguments {
+  final String message;
+  ScreenArguments(this.message);
 }
 
 

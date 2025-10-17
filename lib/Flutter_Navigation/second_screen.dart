@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SecondScreenPage extends StatelessWidget {
-  const SecondScreenPage({super.key});
+  final String data;
+  const SecondScreenPage({super.key,required this.data});
 
   @override
   Widget build(BuildContext context) {
@@ -15,12 +16,12 @@ class SecondScreenPage extends StatelessWidget {
       ),
       body: Center(
         child: Column(
-           mainAxisAlignment: MainAxisAlignment.end,
+           // mainAxisAlignment: MainAxisAlignment.end,
           children: [
             ElevatedButton(onPressed: (){
               Navigator.pop(context);
             },
-                child: Text("Go Back"))
+                child: Text(data))
           ],
         ),
       ),

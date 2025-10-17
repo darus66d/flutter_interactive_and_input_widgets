@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_interactive_and_input_widgets/Flutter_Navigation/second_screen.dart';
+import 'package:flutter_interactive_and_input_widgets/main.dart';
 
 class HomeScreenPage extends StatelessWidget {
   const HomeScreenPage({super.key});
@@ -13,7 +14,7 @@ class HomeScreenPage extends StatelessWidget {
         ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
+          // mainAxisAlignment: MainAxisAlignment.end,
           children: [
             ElevatedButton(onPressed: (){
           //   Navigator.push(
@@ -23,9 +24,12 @@ class HomeScreenPage extends StatelessWidget {
           //       )
           //   );
           // },
-          Navigator.pushNamed(context, '/second');
-    },
-
+          Navigator.pushNamed(
+              context,
+              '/second',
+            arguments: ScreenArguments('hello darus'),
+          );
+            },
                 child: Text("Go to Second Screen")),
           ],
         ),
