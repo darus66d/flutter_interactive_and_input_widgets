@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_interactive_and_input_widgets/Responsive%20UI%20with%20media%20Query/profile.dart';
-
 void main() {
   runApp(const MyApp());
 }
@@ -11,10 +9,37 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Profile()
+      debugShowCheckedModeBanner: false,
+      home: TopTapScreen()
     );
   }
 }
+class TopTapScreen extends StatelessWidget {
+  const TopTapScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return DefaultTabController(
+        length: 4,
+        child: Scaffold(
+          appBar: AppBar(
+            title: Center(child: Text("Top Tap Bar With 4 Page")),
+            bottom: TabBar(
+              isScrollable: true,
+                tabs: [
+                  Tab(text: 'Home',),
+                  Tab(text: 'help',),
+                  Tab(text: 'Profile',),
+                  Tab(text: 'Notification',),
+                ]
+            ),
+          ),
+        )
+    );
+  }
+}
+
+
 
 
 
